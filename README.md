@@ -1,6 +1,20 @@
 # NVivo 11 Crack Cross-Platform Guide (Windows ↔ macOS)
 
-A practical guide for students and researchers using **NVivo 11** across **Windows and macOS** environments.
+---
+
+#### Disclaimer
+
+This repository is an **unofficial community guide** created for **academic and educational purposes only**.
+
+The information provided is based on personal experience using **NVivo 11** across Windows and macOS environments and may not apply to all system configurations.
+
+- These changes may affect your operating system or other applications if performed incorrectly.
+
+```text
+Proceed at your own risk.
+```
+
+---
 
 ### Common Issue
 
