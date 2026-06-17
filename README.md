@@ -1,12 +1,20 @@
-# NVivo 11 Cross-Platform Guide (Windows ↔ macOS)
+# NVivo 11 Crack Cross-Platform Guide (Windows ↔ macOS)
 
 A practical guide for students and researchers using **NVivo 11** across **Windows and macOS** environments.
 
 ### Common Issue
 
-### RuB.exe Error During Export
+### RuB.exe Error During Export from Windows to macOS
 
-The `RuB.exe` utility is responsible for converting projects between Windows and macOS.
+When trying to export a Project from Windows to macOS
+
+Navigate to:   
+
+    ``text
+    File → Clone Project → Export to Mac Version
+    ```
+
+The `RuB.exe` utility is responsible for converting projects from Windows to macOS.  
 
 Possible causes:
 
@@ -55,23 +63,32 @@ NVivo 11 stores projects in different formats depending on the operating system:
 
 ### Windows
 
-- NVivo 11 for [Windows](https://ruppedukh-my.sharepoint.com/:f:/g/personal/thoeun_pisethta_2821_rupp_edu_kh/IgBfXd84yREFQ4lynyFpR5uZAbGsHVm3i5jnUchvOwXetEA?e=qOXyf9)
+- NVivo 11 Crack for [Windows](https://ruppedukh-my.sharepoint.com/:f:/g/personal/thoeun_pisethta_2821_rupp_edu_kh/IgBfXd84yREFQ4lynyFpR5uZAbGsHVm3i5jnUchvOwXetEA?e=qOXyf9)
 - .NET Framework 3.5 enabled
 - .NET Framework 4.x installed
 - TLS 1.2 enabled
-- Administrator privileges
 
 ### macOS
 
-- NVivo 11 for [Mac](https://ruppedukh-my.sharepoint.com/:f:/g/personal/thoeun_pisethta_2821_rupp_edu_kh/IgBfXd84yREFQ4lynyFpR5uZAbGsHVm3i5jnUchvOwXetEA?e=qOXyf9)
+- NVivo 11 Crack for [Mac](https://ruppedukh-my.sharepoint.com/:f:/g/personal/thoeun_pisethta_2821_rupp_edu_kh/IgBfXd84yREFQ4lynyFpR5uZAbGsHVm3i5jnUchvOwXetEA?e=qOXyf9)
 - Storage formatted as **Mac OS Extended (Journaled)** when possible
 - Sufficient free disk space
+
+### Tutorial
+
+[Youtube](https://youtu.be/TkgLVC56rlo)
+
+### Screenshot
+
+<img width="864" height="623" alt="Image" src="https://github.com/user-attachments/assets/48e4717a-da99-4314-9cd4-c1e20297fd36" />
 
 ---
 
 ## Troubleshooting
 
 ### Enable .NET Framework 3.5
+
+- Download [.NET](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/sdk-10.0.301-windows-x64-installer) For Windows if not yet installed
 
 Press `Win + R` and run:
 
@@ -128,7 +145,6 @@ Add the following DWORD (32-bit) values and set them to `1`:
 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319
 
 SchUseStrongCrypto
-SystemDefaultTlsVersions
 ```
 
 Repeat for:
@@ -137,13 +153,13 @@ Repeat for:
 HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\.NETFramework\v4.0.30319
 ```
 
-Restart Windows after making changes.
-
 ### Screenshot
 
 <img width="1422" height="731" alt="Image" src="https://github.com/user-attachments/assets/41fe41a4-7013-488e-b777-9578d5a5b94e" />
 
 <img width="1428" height="735" alt="Image" src="https://github.com/user-attachments/assets/90752643-f89e-4736-a838-d647b204c711" />
+
+Restart Windows after making changes.
 
 ---
 
