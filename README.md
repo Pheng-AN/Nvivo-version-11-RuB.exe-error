@@ -2,7 +2,23 @@
 
 A practical guide for students and researchers using **NVivo 11** across **Windows and macOS** environments.
 
-This repository documents common setup procedures, project conversion workflows, known compatibility issues, and solutions for exporting projects between platforms.
+### Common Issue
+
+### RuB.exe Error During Export
+
+The `RuB.exe` utility is responsible for converting projects between Windows and macOS.
+
+Possible causes:
+
+- .NET Framework 3.5 is disabled
+- TLS 1.2 is disabled
+- Windows Security blocks the conversion process
+- Project corruption
+- Version mismatch between NVivo installations
+
+### Screenshot
+
+<img width="512" height="257" alt="Image" src="https://github.com/user-attachments/assets/3d04b523-ce9d-4f53-9209-6d454121a9a4" />
 
 ---
 
@@ -53,30 +69,6 @@ NVivo 11 stores projects in different formats depending on the operating system:
 
 ---
 
-## Exporting a Project from Windows to macOS
-
-1. Open the original `.nvp` project in NVivo for Windows.
-
-2. Navigate to:
-
-   ```text
-   File → Clone Project → Export to Mac Version
-   ```
-
-3. Wait for the export process to complete.
-
-4. Transfer the generated `.nvpx` file to the Mac.
-
-5. Open the project using NVivo 11 for Mac.
-
-> Do not interrupt the export process.
-
-### Screenshot
-
-<img width="623" height="346" alt="Image" src="https://github.com/user-attachments/assets/e1f5e40a-9926-432d-9eb2-3e968338decd" /> 
-
----
-
 ## Troubleshooting
 
 ### Enable .NET Framework 3.5
@@ -114,9 +106,7 @@ Advanced → Security → Use TLS 1.2
 
 ### Screenshot
 
-```markdown
-![Enable TLS 1.2](./screenshots/tls-12.png)
-```
+<img width="476" height="655" alt="Image" src="https://github.com/user-attachments/assets/28016ab1-a8c2-46d9-ace3-65fd0da51752" />
 
 ---
 
@@ -128,7 +118,11 @@ Open Registry Editor:
 regedit
 ```
 
-Add the following DWORD values and set them to `1`:
+Add the following DWORD (32-bit) values and set them to `1`:
+
+### Screenshot
+
+<img width="443" height="251" alt="Image" src="https://github.com/user-attachments/assets/6f5ffbe6-88ca-4a41-8cc9-57167868fb6b" />
 
 ```text
 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319
@@ -147,24 +141,9 @@ Restart Windows after making changes.
 
 ### Screenshot
 
-```markdown
-![Registry Configuration](./screenshots/registry-strongcrypto.png)
-```
+<img width="1422" height="731" alt="Image" src="https://github.com/user-attachments/assets/41fe41a4-7013-488e-b777-9578d5a5b94e" />
 
----
-
-## Collaboration Workflow for Research Teams
-
-Recommended workflow:
-
-1. Create a master project.
-2. Define a shared node structure.
-3. Distribute copies of the project to team members.
-4. Each member codes different interview transcripts.
-5. Merge projects into a single master project.
-6. Verify coding references after merging.
-
-> Always share the complete NVivo project file, not only the interview transcripts.
+<img width="1428" height="735" alt="Image" src="https://github.com/user-attachments/assets/90752643-f89e-4736-a838-d647b204c711" />
 
 ---
 
