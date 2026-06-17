@@ -73,63 +73,7 @@ NVivo 11 stores projects in different formats depending on the operating system:
 
 ### Screenshot
 
-<img width="623" height="346" alt="Image" src="https://github.com/user-attachments/assets/e1f5e40a-9926-432d-9eb2-3e968338decd" />
-
-
-## Common Issues
-
-### RuB.exe Error During Export
-
-The `RuB.exe` utility is responsible for converting projects between Windows and macOS.
-
-Possible causes:
-
-- .NET Framework 3.5 is disabled
-- TLS 1.2 is disabled
-- Windows Security blocks the conversion process
-- Project corruption
-- Version mismatch between NVivo installations
-
-### Screenshot
-
-```markdown
-![RuB.exe Error](./screenshots/rub-error.png)
-```
-
----
-
-### Failed to Open Project
-
-Error message:
-
-> "This project did not close successfully the last time it was open."
-
-Possible causes:
-
-- Incomplete export process
-- Corrupted transfer
-- Unsupported APFS storage
-- NVivo crash during conversion
-
-### Screenshot
-
-```markdown
-![Project Recovery Error](./screenshots/project-recovery-error.png)
-```
-
----
-
-### APFS Storage Error
-
-Error message:
-
-> "Cannot open or save projects on disk 'Macintosh HD'. The disk has an unsupported format (APFS) that prevents NVivo from saving changes."
-
-### Screenshot
-
-```markdown
-![APFS Error](./screenshots/mac-apfs-error.png)
-```
+<img width="623" height="346" alt="Image" src="https://github.com/user-attachments/assets/e1f5e40a-9926-432d-9eb2-3e968338decd" /> 
 
 ---
 
@@ -151,7 +95,7 @@ Enable:
 ### Screenshot
 
 ```markdown
-![Enable .NET Framework](./screenshots/optionalfeatures-dotnet.png)
+<img width="418" height="370" alt="Image" src="https://github.com/user-attachments/assets/f74c67ce-bcbd-4565-a837-8700ca9bd1f6" />
 ```
 
 ---
