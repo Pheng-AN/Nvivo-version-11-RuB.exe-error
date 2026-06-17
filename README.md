@@ -2,7 +2,7 @@
 
 ---
 
-#### Disclaimer
+## Disclaimer
 
 This repository is an **unofficial community guide** created for **academic and educational purposes only**.
 
