@@ -179,7 +179,10 @@ Restart Windows after making changes.
 
 Windows
 
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/d9aa3ba6-dd79-4e4c-8862-dfd1009fc888" />
+
 Macos
+
 <img width="1266" height="761" alt="Image" src="https://github.com/user-attachments/assets/0695f7c8-b4bc-4ee8-8d23-2f03e0b6f9d4" />
 
 ---
