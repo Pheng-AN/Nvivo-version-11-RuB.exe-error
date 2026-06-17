@@ -137,14 +137,16 @@ regedit
 
 Add the following DWORD (32-bit) values and set them to `1`:
 
+```text
+SchUseStrongCrypto
+```
+
 ### Screenshot
 
 <img width="443" height="251" alt="Image" src="https://github.com/user-attachments/assets/6f5ffbe6-88ca-4a41-8cc9-57167868fb6b" />
 
 ```text
 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319
-
-SchUseStrongCrypto
 ```
 
 Repeat for:
