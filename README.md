@@ -1,186 +1,290 @@
-# Nvivo-version-11-RuB.exe-error
+# NVivo 11 Cross-Platform Guide (Windows ↔ macOS)
 
-<br />
+A practical guide for students and researchers using **NVivo 11** across **Windows and macOS** environments.
 
-------------
-<br />
+This repository documents common setup procedures, project conversion workflows, known compatibility issues, and solutions for exporting projects between platforms.
 
-<a name="requirements"></a>
+---
+
+## Overview
+
+NVivo 11 stores projects in different formats depending on the operating system:
+
+- **Windows:** `.nvp`
+- **macOS:** `.nvpx`
+
+> **Important:** Projects cannot be transferred by simply renaming file extensions. Always use NVivo's built-in conversion tools.
+
+---
+
+## Supported Versions
+
+| Component | Status | Notes |
+|------------|--------|-------|
+| NVivo 11 for Windows | ✅ Supported | Recommended master project platform |
+| NVivo 11 for Mac | ⚠️ Limited Support | Legacy software |
+| Windows 10 | ✅ Supported | Tested |
+| Windows 11 | ✅ Supported | Requires .NET and TLS configuration |
+| macOS Monterey (12) | ⚠️ Partial Support | Use Mac OS Extended (Journaled) storage when possible |
+| macOS Ventura (13) | ⚠️ Limited Support | APFS-related issues reported |
+| macOS Sonoma (14) | ❌ Not Recommended | Frequent compatibility issues |
+| macOS Sequoia (15) | ❌ Not Supported | Unsupported legacy software |
+| macOS Tahoe (26) | ❌ Not Supported | Currently incompatible |
+
+> **Note:** NVivo 11 for Mac has limited support on newer macOS versions using APFS.
+
+---
 
 ## Requirements
 
-Your app will require the following:
-- Internet and GPS access.
-- The experience works best outdoors.
-- A compatible device: Android: Google Pixel 2 or later device for optimum performance.
+### Windows
 
-<br />
+- NVivo 11 for Windows
+- .NET Framework 3.5 enabled
+- .NET Framework 4.x installed
+- TLS 1.2 enabled
+- Administrator privileges
 
-------------
-<br />
+### macOS
 
-<a name="setup"></a>
+- NVivo 11 for Mac
+- Storage formatted as **Mac OS Extended (Journaled)** when possible
+- Sufficient free disk space
 
-## Developer Setup
+---
 
-The app has not been released to the public on a mobile app store, but the code can be downloaded and built in Unity. So far the experience has only been tested on fairly recent Android phones, such as a Pixel or Samsung Galaxy 7 or higher.
+## Exporting a Project from Windows to macOS
 
-- [Unity App](#setup-unity)
-- [ARCore Geospatial API Key](#setup-geo-ar)
-- [Firestore Database (optional)](#setup-firestore)
-- [Client Setup](#setup-app)
+1. Open the original `.nvp` project in NVivo for Windows.
 
-<br />
+2. Navigate to:
 
-<a name="setup-unity"></a>
-### Unity App
+   ```text
+   File → Clone Project → Export to Mac Version
+   ```
 
-1. Download Unity version [2019.4.36f1](https://unity3d.com/unity/qa/lts-releases?version=2019.4) for compatibility. We recommend using Unity Hub.
+3. Wait for the export process to complete.
 
-2. Clone this repo to your machine (optionally fork this repository if you plan on expanding on it).
+4. Transfer the generated `.nvpx` file to the Mac.
 
-3. Open the project in Unity 2019.4.36f1, and open the 'BalloonPopAR' scene (if it doesn't open automatically).
+5. Open the project using NVivo 11 for Mac.
 
-4. Follow the steps below in the ['ARCore Geospatial API Key'](#setup-geo-ar) section
+> Do not interrupt the export process.
 
-5. Follow the steps below in the ['TTS API Key'](#setup-tts-ar) section
+### Screenshot
 
-6. Follow the steps below in the ['Firestore Database'](#setup-firestore) section
+```markdown
+![Export to Mac Version](./screenshots/export-to-mac.png)
+```
 
-7. Follow the steps below in the ['Client Setup'](#setup-app) section
+---
 
-8. Deploy to an [ARCore compatible device](https://developers.google.com/ar/discover/supported-devices).
+## Exporting a Project from macOS to Windows
 
-<br />
+1. Open the `.nvpx` project in NVivo for Mac.
 
-### Screenshots:
-<p float="left" align="middle">
-    <img src="Screenshots/20250620_193840.jpg" width="30%"/>
-    <img src="Screenshots/Screenshot_20250620-165823_AR ITE.jpg" width="30%"/>
-    <img src="Screenshots/Screenshot_20250620-173639_AR ITE.jpg" width="30%"/>
-    <img src="Screenshots/Screenshot_20250620-180055_AR ITE.jpg" width="30%"/>
+2. Select:
 
-</p>
+   ```text
+   File → Manage → Copy Project
+   ```
 
-<a name="setup-geo-ar"></a>
+3. Choose the Windows project format if available.
 
-### ARCore Geospatial API Key
+4. Transfer the converted project to the Windows computer.
 
-You will need an API Key with ARCore Geospatial API enabled for your app to use GeoAR features.
+5. Open the project in NVivo for Windows.
 
-Follow the steps [here to in order to obtain an API key.](https://developers.google.com/ar/develop/geospatial/unity-arf/developer-guide)
+### Screenshot
 
-Add the API Key to your Unity Project:
-1. Open the Unity Project Settings
+```markdown
+![Export to Windows Version](./screenshots/export-to-windows.png)
+```
 
-2. Under 'XR Plug-in Management', click on 'ARCore Extensions'
+---
 
-3. Past the Android API Key into the 'Android API Key' textfield
+## Common Issues
 
-4. 'Geospatial' should be turned on
+### RuB.exe Error During Export
 
-<br />
+The `RuB.exe` utility is responsible for converting projects between Windows and macOS.
 
-<a name="setup-tts-ar"></a>
+Possible causes:
 
-### TexTtoSpeech API Key
+- .NET Framework 3.5 is disabled
+- TLS 1.2 is disabled
+- Windows Security blocks the conversion process
+- Project corruption
+- Version mismatch between NVivo installations
 
-You will need an API Key with ARCore Geospatial API enabled for your app to use GeoAR features.
+### Screenshot
 
-Follow the steps [here to in order to obtain an API key.](https://cloud.google.com/text-to-speech?hl=en)
+```markdown
+![RuB.exe Error](./screenshots/rub-error.png)
+```
 
-Add the API Key to your Unity Prefab Scenes:
-1. Open Unity Prefab Scenes
+---
 
-2. In 'TTS Manager', click on 'API keys'
+### Failed to Open Project
 
-3. Past the API Key into the 'Api Key' textfield
+Error message:
 
-4. Audio Encoding 'Mp3' as defualt audio clip file
+> "This project did not close successfully the last time it was open."
 
-5. 'TexttoSpeech' should be heard from devices when close to prefabs with dynamic 'Speak' button
+Possible causes:
 
-<br />
+- Incomplete export process
+- Corrupted transfer
+- Unsupported APFS storage
+- NVivo crash during conversion
 
-### TTS Setup:
-![Image](https://github.com/user-attachments/assets/945e7f4b-f7ab-46c1-85b7-1868b1db0fd9)
+### Screenshot
 
-<a name="setup-firestore"></a>
+```markdown
+![Project Recovery Error](./screenshots/project-recovery-error.png)
+```
 
-### Firestore geoite Database
+---
 
-The project uses the Firestore database in Firebase to save geoite coordinates, send geoite pops and listen for changes in geoites near the user. This allows the game to keep a shared global state of geoite locations, creating a multiplayer experience of geoite placing and popping.
+### APFS Storage Error
 
-#### Install Firebase
+Error message:
 
-Import the following plugins - using `Assets > Import Package > Custom Package` menu item - from the [Firebase Unity SDK](https://firebase.google.com/docs/unity/setup):
+> "Cannot open or save projects on disk 'Macintosh HD'. The disk has an unsupported format (APFS) that prevents NVivo from saving changes."
 
-##### IMPORTANT
-After importing the Firebase packages you may run into a compatibility issues with the ExternalDependencyManager (EDM) that ships with both Firebase and and ARCore Extensions. We recommend using whichever version is newer. 
+### Screenshot
 
-If ARCore Extensions has a newer EDM you may uncheck the 'ExternalDependencyManager" when  importing these packages:
+```markdown
+![APFS Error](./screenshots/mac-apfs-error.png)
+```
 
-* FirebaseAuth.unitypackage
-* FirebaseFirestore.unitypackage
+---
 
-If Firebase is using a newer EDM we suggest installing the lite version of ARCore Extensions per the instructions [here](https://developers.google.com/ar/develop/unity-arf/getting-started-extensions#without-edm4u). 
+## Troubleshooting
 
-#### Create a Firebase API Key
+### Enable .NET Framework 3.5
 
-1. Create a [Firebase account if you don't already have one](https://firebase.google.com/docs/firestore/quickstart#create)
+Press `Win + R` and run:
 
-2. Add a new project in the [Firebase Console](https://console.firebase.google.com/).
+```text
+optionalfeatures
+```
 
-3. In the 'Build' -> 'Firestore Database' section of your project click ['Create a database'.](https://console.firebase.google.com/project/webgl-exploration/firestore)
+Enable:
 
-4. Select production mode and choose a relevant region for your Cloud Firestore data to be stored.
+- .NET Framework 3.5 (includes .NET 2.0 and 3.0)
+- .NET Framework 4.x Advanced Services
 
-5. Create a new collection in your database and name it 'geoites'.
+### Screenshot
 
-6. Go to your 'Project settings' -> 'General' -> 'Your apps' and click the 'Add app' button. Click the button with the Unity icon on it.
+```markdown
+![Enable .NET Framework](./screenshots/optionalfeatures-dotnet.png)
+```
 
-7. Choose a unique package name (for Android), then download the 'google-services.json' config file for the Android build.
+---
 
-8. Now place the 'google-services.json' config file in the 'StreamingAssets' folder within the Unity project. (Assets -> StreamingAssets -> 'google-services.json').
+### Enable TLS 1.2
 
-<br />
+Press `Win + R` and run:
 
-<a name="setup-app"></a>
+```text
+inetcpl.cpl
+```
 
-### Client Setup
+Navigate to:
 
-### 1. USER ACTIONS
-Represents the Mobile User’s interactions through the AR app: [here](https://ruppedukh-my.sharepoint.com/:u:/g/personal/thoeun_pisethta_2821_rupp_edu_kh/EfzfUkmoJPxDolK4XCqnzg4BLf9Yb0i8zRtuZbKBrPoqsQ?e=DzCVT6)
-* Start User Session: Launches the AR experience. (Android API 24)
-* Permissions: allow Camera, Locations or GPS, Internets Access.
+```text
+Advanced → Security → Use TLS 1.2
+```
 
-### 2. ADMIN ACTIONS
-Describes how an admin adds content via the Web Admin Panel: [here](https://github.com/Vignou/web_AR_SE.git)
-* Start Admin Session: Admin logs into the dashboard.
-* Enter Object Name or Code
-* Enter Descriptions
-* Place Object on Map UI
-* Enter Altitude (Optional)
+### Screenshot
 
-### 3. SYSTEM PROCESSING
-Handles backend processes:
-* Store Data: Saves geo-based content into FirebaseFirestore
-* Process TTS: Generates speech output when users walk near to the object.
+```markdown
+![Enable TLS 1.2](./screenshots/tls-12.png)
+```
 
-### 4. SYSTEM COMPONENTS
-* Mobile AR App and Web Admin Panel are linked to their respective users.
-* All flow routes pass through the appropriate system channels and interact
-with Firebase
-<br />
+---
 
-------------
+### Configure .NET Registry Settings
 
-<a name="contributors"></a>
+Open Registry Editor:
+
+```text
+regedit
+```
+
+Add the following DWORD values and set them to `1`:
+
+```text
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319
+
+SchUseStrongCrypto
+SystemDefaultTlsVersions
+```
+
+Repeat for:
+
+```text
+HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\.NETFramework\v4.0.30319
+```
+
+Restart Windows after making changes.
+
+### Screenshot
+
+```markdown
+![Registry Configuration](./screenshots/registry-strongcrypto.png)
+```
+
+---
+
+## Collaboration Workflow for Research Teams
+
+Recommended workflow:
+
+1. Create a master project.
+2. Define a shared node structure.
+3. Distribute copies of the project to team members.
+4. Each member codes different interview transcripts.
+5. Merge projects into a single master project.
+6. Verify coding references after merging.
+
+> Always share the complete NVivo project file, not only the interview transcripts.
+
+---
+
+## Best Practices
+
+- Back up projects before conversion.
+- Avoid cloud-sync folders during export.
+- Use identical NVivo versions across all devices.
+- Test project conversion using a small sample project first.
+- Maintain a master project on one primary device.
+
+---
+
+## Repository Structure
+
+```text
+.
+├── README.md
+├── screenshots/
+│   ├── export-to-mac.png
+│   ├── export-to-windows.png
+│   ├── rub-error.png
+│   ├── tls-12.png
+│   ├── optionalfeatures-dotnet.png
+│   ├── registry-strongcrypto.png
+│   ├── mac-apfs-error.png
+│   └── project-recovery-error.png
+└── docs/
+    └── troubleshooting.md
+```
+
+---
 
 ## Contributors
 
- - [Thoeun Pisethta](https://github.com/Pheng-AN)
- - [Mam Sovanratana](https://github.com/RatanaJr)
- - [Pok Tepvignou](https://github.com/Vignou)
-
-<br />
+- Your Name
+- Team Member 1
+- Team Member 2
