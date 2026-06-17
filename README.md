@@ -36,7 +36,7 @@ Or when trying to Export a Project from Windows to Macos
    File → Clone Project → Export to Mac Version
    ```
 
-The `RuB.exe` utility is responsible for converting projects from MacOS to Windows  
+The `RuB.exe` utility is responsible for converting projects between NVivo for Windows and NVivo for Mac.
 
 Possible causes:
 
@@ -94,7 +94,7 @@ NVivo 11 stores projects in different formats depending on the operating system:
 
 - A licensed installation of NVivo 11 for [Mac](https://ruppedukh-my.sharepoint.com/:f:/g/personal/thoeun_pisethta_2821_rupp_edu_kh/IgBfXd84yREFQ4lynyFpR5uZAbGsHVm3i5jnUchvOwXetEA?e=qOXyf9)
 - Storage formatted as **Mac OS Extended (Journaled)** when possible
-- Always open .nvpx file in the new created partition format for Nvivo only
+- - Store and open `.nvpx` files from a dedicated partition or external drive formatted as **Mac OS Extended (Journaled)**.
 
 ### Tutorial
 
@@ -189,7 +189,7 @@ Restart Windows after making changes.
 
 ---
 
-### G.G
+### G.G Successful Conversion Examples
 
 Windows
 
