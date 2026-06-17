@@ -185,7 +185,9 @@ HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\.NETFramework\v4.0.30319
 
 <img width="1428" height="735" alt="Image" src="https://github.com/user-attachments/assets/90752643-f89e-4736-a838-d647b204c711" />
 
-Restart Windows after making changes.
+---
+
+## Restart Windows after making changes.
 
 ---
 
