@@ -153,6 +153,8 @@ SchUseStrongCrypto
 
 <img width="443" height="251" alt="Image" src="https://github.com/user-attachments/assets/6f5ffbe6-88ca-4a41-8cc9-57167868fb6b" />
 
+Pathname:
+
 ```text
 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319
 ```
@@ -170,6 +172,15 @@ HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\.NETFramework\v4.0.30319
 <img width="1428" height="735" alt="Image" src="https://github.com/user-attachments/assets/90752643-f89e-4736-a838-d647b204c711" />
 
 Restart Windows after making changes.
+
+---
+
+### G.G
+
+Windows
+
+Macos
+<img width="1266" height="761" alt="Image" src="https://github.com/user-attachments/assets/0695f7c8-b4bc-4ee8-8d23-2f03e0b6f9d4" />
 
 ---
 
