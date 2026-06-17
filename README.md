@@ -1,4 +1,4 @@
-# NVivo 11 Crack Cross-Platform Guide (Windows ↔ macOS)
+# NVivo 11 Cross-Platform Guide (Windows ↔ macOS)
 
 ---
 
@@ -85,14 +85,14 @@ NVivo 11 stores projects in different formats depending on the operating system:
 
 ### Windows
 
-- NVivo 11 Crack for [Windows](https://ruppedukh-my.sharepoint.com/:f:/g/personal/thoeun_pisethta_2821_rupp_edu_kh/IgBfXd84yREFQ4lynyFpR5uZAbGsHVm3i5jnUchvOwXetEA?e=qOXyf9)
+- A licensed installation of NVivo 11 for [Windows](https://ruppedukh-my.sharepoint.com/:f:/g/personal/thoeun_pisethta_2821_rupp_edu_kh/IgBfXd84yREFQ4lynyFpR5uZAbGsHVm3i5jnUchvOwXetEA?e=qOXyf9)
 - .NET Framework 3.5 enabled
 - .NET Framework 4.x installed
 - TLS 1.2 enabled
 
 ### macOS
 
-- NVivo 11 Crack for [Mac](https://ruppedukh-my.sharepoint.com/:f:/g/personal/thoeun_pisethta_2821_rupp_edu_kh/IgBfXd84yREFQ4lynyFpR5uZAbGsHVm3i5jnUchvOwXetEA?e=qOXyf9)
+- A licensed installation of NVivo 11 for [Mac](https://ruppedukh-my.sharepoint.com/:f:/g/personal/thoeun_pisethta_2821_rupp_edu_kh/IgBfXd84yREFQ4lynyFpR5uZAbGsHVm3i5jnUchvOwXetEA?e=qOXyf9)
 - Storage formatted as **Mac OS Extended (Journaled)** when possible
 - Always open .nvpx file in the new created partition format for Nvivo only
 
