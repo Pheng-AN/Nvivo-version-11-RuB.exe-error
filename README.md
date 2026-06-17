@@ -14,7 +14,7 @@ When trying to Import a Project from Macos to Windows
    File → Open Project → Select .nvpx file → Convert to Windows Project
    ```
 
-And When trying to Export a Project from Windows to Macos
+Or when trying to Export a Project from Windows to Macos
 
 - Navigate to:
 
@@ -80,7 +80,7 @@ NVivo 11 stores projects in different formats depending on the operating system:
 
 - NVivo 11 Crack for [Mac](https://ruppedukh-my.sharepoint.com/:f:/g/personal/thoeun_pisethta_2821_rupp_edu_kh/IgBfXd84yREFQ4lynyFpR5uZAbGsHVm3i5jnUchvOwXetEA?e=qOXyf9)
 - Storage formatted as **Mac OS Extended (Journaled)** when possible
-- Sufficient free disk space
+- Always open .nvpx file in the new created partition format for Nvivo only
 
 ### Tutorial
 
