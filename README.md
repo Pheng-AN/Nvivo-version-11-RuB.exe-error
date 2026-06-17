@@ -74,34 +74,8 @@ NVivo 11 stores projects in different formats depending on the operating system:
 ### Screenshot
 
 ```markdown
-![alt text](image.png)
+![Export to Windows Version](https://scalar.usc.edu/works/using-nvivo-an-unofficial-and-unauthorized-primer/opening-an-existing-nvivo-project)
 ```
-
----
-
-## Exporting a Project from macOS to Windows
-
-1. Open the `.nvpx` project in NVivo for Mac.
-
-2. Select:
-
-   ```text
-   File → Manage → Copy Project
-   ```
-
-3. Choose the Windows project format if available.
-
-4. Transfer the converted project to the Windows computer.
-
-5. Open the project in NVivo for Windows.
-
-### Screenshot
-
-```markdown
-![Export to Windows Version](./screenshots/export-to-windows.png)
-```
-
----
 
 ## Common Issues
 
