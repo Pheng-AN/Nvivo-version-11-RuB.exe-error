@@ -94,9 +94,7 @@ Enable:
 
 ### Screenshot
 
-```markdown
 <img width="418" height="370" alt="Image" src="https://github.com/user-attachments/assets/f74c67ce-bcbd-4565-a837-8700ca9bd1f6" />
-```
 
 ---
 
