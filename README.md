@@ -8,11 +8,11 @@ A practical guide for students and researchers using **NVivo 11** across **Windo
 
 When trying to export a Project from Windows to macOS
 
-Navigate to:   
+- Navigate to:
 
-    ``text
-    File → Clone Project → Export to Mac Version
-    ```
+   ```text
+   File → Clone Project → Export to Mac Version
+   ```
 
 The `RuB.exe` utility is responsible for converting projects from Windows to macOS.  
 
