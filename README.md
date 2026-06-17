@@ -47,7 +47,7 @@ NVivo 11 stores projects in different formats depending on the operating system:
 
 ### macOS
 
-- NVivo 11 for Mac
+- NVivo 11 for [Mac](https://ruppedukh-my.sharepoint.com/:f:/g/personal/thoeun_pisethta_2821_rupp_edu_kh/IgBfXd84yREFQ4lynyFpR5uZAbGsHVm3i5jnUchvOwXetEA?e=qOXyf9)
 - Storage formatted as **Mac OS Extended (Journaled)** when possible
 - Sufficient free disk space
 
@@ -74,7 +74,7 @@ NVivo 11 stores projects in different formats depending on the operating system:
 ### Screenshot
 
 ```markdown
-![Export to Mac Version](./screenshots/export-to-mac.png)
+![alt text](image.png)
 ```
 
 ---
