@@ -39,7 +39,7 @@ NVivo 11 stores projects in different formats depending on the operating system:
 
 ### Windows
 
-- NVivo 11 for Windows
+- NVivo 11 for [Windows](https://ruppedukh-my.sharepoint.com/:f:/g/personal/thoeun_pisethta_2821_rupp_edu_kh/IgBfXd84yREFQ4lynyFpR5uZAbGsHVm3i5jnUchvOwXetEA?e=qOXyf9)
 - .NET Framework 3.5 enabled
 - .NET Framework 4.x installed
 - TLS 1.2 enabled
@@ -265,6 +265,4 @@ Recommended workflow:
 
 ## Contributors
 
-- Your Name
-- Team Member 1
-- Team Member 2
+ - [Thoeun Pisethta](https://github.com/Pheng-AN)
