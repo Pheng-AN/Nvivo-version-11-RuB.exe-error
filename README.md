@@ -4,9 +4,17 @@ A practical guide for students and researchers using **NVivo 11** across **Windo
 
 ### Common Issue
 
-### RuB.exe Error During Export from Windows to macOS
+### RuB.exe Error During Import from Macos to Windows
 
-When trying to export a Project from Windows to macOS
+When trying to Import a Project from Macos to Windows
+
+- Navigate to:
+
+   ```text
+   File → Open Project → Select .nvpx file → Convert to Windows Project
+   ```
+
+And When trying to Export a Project from Windows to Macos
 
 - Navigate to:
 
@@ -14,7 +22,7 @@ When trying to export a Project from Windows to macOS
    File → Clone Project → Export to Mac Version
    ```
 
-The `RuB.exe` utility is responsible for converting projects from Windows to macOS.  
+The `RuB.exe` utility is responsible for converting projects from MacOS to Windows  
 
 Possible causes:
 
