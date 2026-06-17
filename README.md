@@ -74,7 +74,7 @@ NVivo 11 stores projects in different formats depending on the operating system:
 ### Screenshot
 
 ```markdown
-![Export to Windows Version](https://scalar.usc.edu/works/using-nvivo-an-unofficial-and-unauthorized-primer/opening-an-existing-nvivo-project)
+![Export to Windows Version](<img width="623" height="346" alt="Image" src="https://github.com/user-attachments/assets/e1f5e40a-9926-432d-9eb2-3e968338decd" />)
 ```
 
 ## Common Issues
