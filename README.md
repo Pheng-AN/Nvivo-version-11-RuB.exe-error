@@ -94,7 +94,7 @@ NVivo 11 stores projects in different formats depending on the operating system:
 
 - A licensed installation of NVivo 11 for [Mac](https://ruppedukh-my.sharepoint.com/:f:/g/personal/thoeun_pisethta_2821_rupp_edu_kh/IgBfXd84yREFQ4lynyFpR5uZAbGsHVm3i5jnUchvOwXetEA?e=qOXyf9)
 - Storage formatted as **Mac OS Extended (Journaled)** when possible
-- - Store and open `.nvpx` files from a dedicated partition or external drive formatted as **Mac OS Extended (Journaled)**.
+- Store and open `.nvpx` files from a dedicated partition or external drive formatted as **Mac OS Extended (Journaled)**.
 
 ### Tutorial
 
