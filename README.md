@@ -27,8 +27,8 @@ NVivo 11 stores projects in different formats depending on the operating system:
 | Windows 11 | ✅ Supported | Requires .NET and TLS configuration |
 | macOS Monterey (12) | ⚠️ Partial Support | Use Mac OS Extended (Journaled) storage when possible |
 | macOS Ventura (13) | ⚠️ Limited Support | APFS-related issues reported |
-| macOS Sonoma (14) | ❌ Not Recommended | Frequent compatibility issues |
-| macOS Sequoia (15) | ❌ Not Supported | Unsupported legacy software |
+| macOS Sonoma (14) | ⚠️ Partial Support | Frequent compatibility issues |
+| macOS Sequoia (15) | ⚠️ Partial Support | Unsupported legacy software |
 | macOS Tahoe (26) | ❌ Not Supported | Currently incompatible |
 
 > **Note:** NVivo 11 for Mac has limited support on newer macOS versions using APFS.
@@ -260,26 +260,6 @@ Recommended workflow:
 - Use identical NVivo versions across all devices.
 - Test project conversion using a small sample project first.
 - Maintain a master project on one primary device.
-
----
-
-## Repository Structure
-
-```text
-.
-├── README.md
-├── screenshots/
-│   ├── export-to-mac.png
-│   ├── export-to-windows.png
-│   ├── rub-error.png
-│   ├── tls-12.png
-│   ├── optionalfeatures-dotnet.png
-│   ├── registry-strongcrypto.png
-│   ├── mac-apfs-error.png
-│   └── project-recovery-error.png
-└── docs/
-    └── troubleshooting.md
-```
 
 ---
 
