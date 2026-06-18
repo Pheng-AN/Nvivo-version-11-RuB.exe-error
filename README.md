@@ -209,7 +209,7 @@ Macos
 - Avoid cloud-sync folders during export.
 - Use identical NVivo versions across all devices.
 - Test project conversion using a small sample project first.
-- Maintain a master project on one primary device.
+- Maintain a master project on one primary device (recommend Windows).
 
 ---
 
